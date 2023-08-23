@@ -1,0 +1,1055 @@
+
+.main{
+    height: 350px;
+    overflow: hidden;
+}
+
+.inner1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sc-visual {
+    display: flex;
+    width: 770px;
+    height: 350px;
+}
+
+.sc-visual .btn-nav {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    background: #ccc;
+}
+
+.sc-visual .btn-nav button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    background-color: #d2e1e9;
+}
+
+.sc-visual .btn-nav button::before {
+    width: 50px;
+    height: 50px;
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.sc-visual .btn-nav .btn-news::before {
+    background: #fff url(https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png) no-repeat 0 0;
+}
+
+.sc-visual .btn-nav .btn-citizens::before {
+    background: #fff url(https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png) no-repeat -50px 0px;
+}
+
+.sc-visual .btn-nav button.on {
+    background-color: #0158a8;
+    color: #fff;
+}
+.sc-visual .btn-nav button span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sc-visual .btn-nav button.on span::before{
+    content: " ";
+    position: absolute;
+    z-index: 10;
+    left: 99%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #0158a8;
+    margin-top: -25px;
+}
+
+
+.sc-visual .content {
+    width: 690px;
+    background: #0cc;
+}
+
+.sc-visual .swiper {
+    height: 100%;
+}
+
+.sc-visual .control-area {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+
+.sc-visual .control-area .fraction {
+    width: auto;
+}
+
+.sc-visual .control-area button {
+    z-index: 10;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    background: url(../images/sp1.png) no-repeat -237px -284px;
+}
+
+.control-area button.btn-prev{
+    background-position: -237px -284px;
+}
+
+
+
+.control-area button.btn-next{
+    background-position: -255px -284px;
+}
+  
+.sc-visual .control-area .btn-autoplay {
+    margin-left: 6px;
+    background-position: -283px -284px;
+}
+
+.sc-visual .control-area .btn-autoplay.on {
+    background-position: -269px -284px;
+}
+
+.sc-visual .desc{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 122px;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+
+
+.inner1 .col-right {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 360px;
+    height: 350px;
+}
+.col-right .sc-covid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    height: 36px;
+    background-color: #99ddf4;
+}
+.col-right .sc-covid img{
+    margin-top: 1px;
+}
+.col-right .sc-covid .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 21px;
+    padding-left: 4px;
+    background-color: #319ac6;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.col-right .sc-covid .info a{
+    display: inline-flex;
+    align-items: center;
+    height: 21px;
+    margin-left: 2px;
+    padding: 0 2px 0 4px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.col-right .sc-covid .info a::after{
+    content: '';
+    width: 8px;
+    height: 11px;
+    margin-left: 3px;
+    background: url(../images/arrow.png) no-repeat 0 0;
+}
+.col-right .corona_date{
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+}
+.col-right .sc-municipa{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 204px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.col-right .sc-municipa a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.col-right .sc-municipa img{
+    height: 100%;
+    max-width: 100%;
+}
+.col-right .sc-municipa .desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background: rgba(0,0,0, .7);
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.col-right .sc-mayor{
+    position: relative;
+
+}
+
+
+.col-right .sc-mayor a.btn-go{
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    vertical-align: top;
+}
+
+.col-right .sc-mayor .link_list{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 26px;
+}
+.col-right .sc-mayor .link_list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(25% - 1px);
+    height: 100%;
+    background-color: #8b7153;
+}
+.col-right .sc-mayor .link_list li a{
+    
+}
+.col-right .sc-mayor .link_list img{
+    vertical-align: middle;
+}
+
+
+/* service */
+.sc-service{
+    position: relative;
+    padding: 50px 0 0;
+}
+.sc-service .group_header{
+    position: relative;
+    display: flex;    
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 24px;
+}
+
+.sc-service .group_header h2{
+    font-size: 24px;
+    margin-top: 6px;
+}
+
+.sc-service .group_header .service_link{
+    margin-left: auto;
+}
+.sc-service .group_header .service_link a{   
+     width: 65px;
+    margin-right: 14px;
+    background-position: 0 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    background: url(../images/sp5.png) no-repeat 0 0;
+}
+.sc-service .group_header .service_link a:first-child:after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: -15px;
+    width: 1px;
+    height: 16px;
+    background: #dbdbdb;
+
+}
+
+.sc-service .group_header .service_link a.link_story:hover{
+    background: url(../images/sp5.png) no-repeat 0 -30px;
+}
+
+.sc-service .group_header .service_link a.link_fastival:hover{
+    background-position: -65px -30px;
+}
+
+
+
+.sc-service .group_header .service_link a:last-child{
+    width: 95px;
+    margin-left: 14px;
+    background-position: -65px 0;
+    margin-right: 0;
+
+}
+
+
+.sc-service  .content{
+    overflow: hidden;
+}
+.sc-service  .content ul{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0 auto;
+}
+.sc-service  .content ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.sc-service  .content ul a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+.sc-service  .content ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sc-service  .content ul a::before
+{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-image: url(../images/sp2.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.sc-service  .content ul .ic-public::before{
+    background-position: -360px 0;
+}
+
+.sc-service  .content ul .ic-job::before {
+    background-position: -120px 0;
+}
+.sc-service  .content ul .ic-house::before{
+    background-position: -300px 0;
+}
+.sc-service  .content ul .ic-seoulrun::before{
+    background-position: -180px 0;
+}
+.sc-service  .content ul .ic-welfare::before{
+    background-position: -960px 0;
+}
+.sc-service  .content ul .ic-dwelling::before{
+    background-position: -780px 0;
+}
+.sc-service .content ul .ic-youth::before{
+    background-position: -1140px 0;
+}
+.sc-service  .content ul .ic-inseoul::before{
+    background-position: -1020px 0;
+}
+.sc-service  .content ul .ic-imagination::before{
+    background-position: -60px 0;
+}
+.sc-service  .content ul .ic-ebook::before{
+    background-position: -1080px 0;
+}
+.sc-service  .content ul .ic-council::before{
+    background-position: -600px 0;
+}
+
+
+.sc-service .content a.link-all{
+    position: absolute;
+    left: 140px;
+    right: auto;
+    top: 50px;
+    width: 112px;
+    height: 29px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    font-size: 15px;
+    padding-left: 13px;
+    margin-left: 15px;
+    line-height: 28px;
+    background: url(../images/arrow2.png) no-repeat right 13px top 50%;
+}
+
+
+/* sc-banner */
+ .sc-banner{
+    margin-top: 35px;
+    background: #eff4f8;
+ }
+  .sc-banner .banner_list{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sc-banner .banner_list li{
+    padding: 20px 0;
+
+  }
+  .sc-banner .banner_list li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .sc-banner .banner_list li a::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 1px;
+    height: 60px;
+    background: #dbdbdb;
+  }
+
+  .sc-banner .banner_list li:first-child a::after{
+    background: transparent;
+  }
+
+
+
+  /* inner2 */
+
+  .inner2{
+    display: flex;
+    gap: 36px;
+    padding: 50px 0 50px;
+    border-bottom: 2px solid #222222;
+  }
+
+  .inner2 section{
+    flex: 1;
+    width: 360px;
+  }
+
+ 
+  .inner2 h2{
+
+    font-size: 24px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #dbdbdb;
+  }
+
+  .inner2 section{
+    position: relative;
+  }
+
+  .inner2 section:last-child h2{
+    border: none;
+  }
+
+  .inner2 .link-all{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background: url(../images/sp1.png) no-repeat -1px -1px;
+  }
+  .inner2 a.ink-all{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .inner2  ul {
+    padding-top: 10px;
+  }
+  .inner2  ul li{
+    padding: 6px 0 6px 0;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .inner2  strong{
+    color: #9b64d3;
+    margin: 0 9px 0 0;
+    font-size: 15px;
+  }
+
+  .inner2  ul a{
+    font-size: 15px;
+    color: #222;
+  }
+
+  .inner2  .sc-board li strong.eco,
+  .sc-board li strong.busy{
+        color: #599100;
+  }
+ .sc-board li strong.home,
+ .sc-board li strong.busy{
+    color: #c35c3c;
+  }
+  .c-board li strong.public{
+    color: #337ee2;
+  }
+
+ .sc-often > ul{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 17px 5px 7px 20px;
+    background: #eff4f8;
+    display: flex;
+    flex-wrap: wrap;    
+  }
+
+ 
+    .inner2 .sc-often li{
+    width: 47%;
+    position: relative;
+    padding: 0 0 10px 10px;
+  }
+
+   .inner2 .sc-often li::before{
+    content: '';
+    position: absolute;
+    background: #666666;
+    width: 2px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+}
+
+  .inner2 .sc-often a{
+    display: block;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #333;
+}
+
+
+.sc-field {
+    padding-top: 40px;
+}
+.sc-field h2{
+    padding: 0 0 20px 0;
+    font-size: 24px;
+}
+.sc-field ul{
+    padding: 0 27px;
+    /* margin-left: -59px; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.sc-field ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85px;
+    height: 145px;
+    text-align: center;
+}
+.sc-field ul a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.sc-field ul a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 145px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_house.png) no-repeat;
+
+}
+
+.sc-field ul a.ic-econ::before{
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_economy.png) no-repeat;
+}
+.sc-field ul a.ic-publ::before{
+        background: url(	https://www.seoul.go.kr/res_newseoul/images/icon_traffic.png) no-repeat;
+}
+.sc-field ul a.ic-eco::before{
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_environment.png) no-repeat;
+}
+.sc-field ul a.ic-well::before{
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_welfare.png) no-repeat;
+}
+.sc-field ul a.ic-safty::before{
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_safty.png) no-repeat;
+}
+.sc-field ul a.ic-cult::before{
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_culture.png) no-repeat;
+}
+.sc-field ul a.ic-admi::before{
+        background: url(https://www.seoul.go.kr/res_newseoul/images/icon_work.png) no-repeat;
+}
+.sc-field ul li a span{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 100px;
+}
+
+
+
+/*  */
+.sc-news{
+    position: relative;
+    clear: both;
+    padding: 20px 0 30px;
+}
+
+.sc-news h2{
+    font-size: 24px;
+    display: flex;
+    padding: 0 0 20px 0;
+}
+
+.sc-news a.list_all{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: block;
+    width:75px;
+    margin-left: auto;
+    font-size: 15px;
+    color: #7d7d7d;
+}
+
+.sc-news a.list_all::after{
+    content: '';
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../images/sp1.png) no-repeat 0 -259px;
+}
+
+
+.sc-news .news-list ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sc-news .news-list li{
+    width: 273px;
+}
+.sc-news .news-list .img_area{
+    width: 100%;
+    height: 188px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+}
+.sc-news .news-list .img_area img{
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    min-width: 273px;
+    height: 188px;
+}
+.sc-news .news-list a img:hover {
+    transform: scale(1.1);
+}
+
+.sc-news .news-list li:last-child a:hover img {
+    transform: scale(1);
+}
+.sc-news .news-list .img_area .news_keyword{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 82px;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    z-index: 1;
+    background-color: #599100;
+}
+.sc-news .news-list li:nth-child(2) .img_area .news_keyword{
+    background-color: #d76000;
+}
+
+.sc-news .news-list li:nth-child(4) .img_area .news_keyword,
+.sc-news .news-list li:nth-child(7) .img_area .news_keyword{
+    background-color: #e44869;
+}
+.sc-news .news-list li:nth-child(5) .img_area .news_keyword{
+    background-color: #028ab6;
+}
+
+.sc-news .news-list p{
+    font-size: 16px;
+    width: 100%;
+    height: 3em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: normal;
+    color: #222;
+    word-break: keep-all;
+}
+
+
+/* sc-media */
+
+.sc-media{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sc-media h3{
+    font-size: 24px;
+    padding-bottom: 11px;
+}
+
+.sc-smedia .group-video{
+
+}
+.sc-media .group-video a{
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 152px;
+    overflow: hidden;
+}
+
+.sc-media .group-video a img{
+    max-width: 100%;
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+}
+.sc-media .group-video a:hover img{
+    transform: scale(1.1);
+}
+.sc-media .group-video a .title{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.5);
+    padding: 11px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.group-news{
+    width: 480px;
+}
+
+.group-news ul{}
+.group-news ul li{
+    padding: 8px 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color: #555555;
+}
+.group-news ul a{
+    color: #555;
+}
+.group-news a.badge{
+    font-size: 16px;
+    font-weight: 400;
+    color: #09ac43;
+    margin-right: 18px;
+}
+
+.group-sns{
+    position: relative;
+    width: 350px;
+    height: 195px;
+    background: url(../images/bg_sns_list.jpg) no-repeat 0 0;
+    line-height: 1.2;
+    padding: 10px 15px;
+    font-size: 22px;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: #222222;
+}
+
+.group-sns h2{
+    position: relative;
+    padding-right: 0;
+    color: #222;
+    font-size: 20px;
+    font-weight: 600;
+}
+.group-sns ul{
+    overflow: hidden;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 276px;
+    height: 40px;
+    margin-left: -138px;
+}
+.group-sns h3{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.group-sns ul li{
+        float: left;
+    margin: 0 3px;}
+.group-sns ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/sp6.png) no-repeat 0 0;
+    background-position: 0 0;
+    text-indent: -9999em;
+
+}
+.group-sns ul li a.facebook{
+    background-position: -40px 0;
+}
+.group-sns ul li a.twitter{
+    background-position: -80px 0;
+}
+.group-sns ul li a.blog{
+    background-position: -120px 0;
+}
+.group-sns ul li a.youtube{
+    background-position: -160px 0;
+}
+.group-sns ul li a.kakaostory{
+    background-position: -200px 0;
+}
+
+
+
+/* sc-banner */
+
+
+.sc-popup{
+    position: relative;
+    padding: 50px 0 50px 0;
+    border-top: 2px solid #222;
+    box-sizing: border-box;
+
+}
+
+.sc-popup .banner-slide{
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sc-popup ul{
+    display: flex;
+}
+.sc-popup li{
+    list-style: none;
+    position: relative;
+    width: 355px;
+}
+.sc-popup .control-area {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+
+.sc-popup .control-area .fraction {
+    width: auto;
+    letter-spacing: -0.2em;
+    margin-right: 8px;
+}
+
+.sc-popup .control-area button {
+    width: 20px;
+    height: 20px;
+    background: url(../images/sp1.png) no-repeat ;
+}
+
+.sc-popup .control-area .btn-autoplay {
+    border: 1px solid #999;
+    background-position: -65px -43px;
+}
+
+.sc-popup .control-area .btn-autoplay.on {
+    background-position: -101px -43px;;
+}
+.sc-popup .control-area button.btn-prev{
+    border: 1px solid #999;
+    background-position: -45px -43px;
+    border-right: none;
+}
+.sc-popup .control-area button.btn-next{
+    border: 1px solid #999;
+    border-left: 0;
+    background-position: -86px -43px;
+}
+
+
+
+/* sc-relate */
+
+.sc-relate{}
+.sc-relate h2{}
+.sc-relate ul.relate-list{
+    overflow: hidden;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+}
+.sc-relate .relate-list .relate-item{
+        overflow: hidden;
+        width: 20%;
+}
+.sc-relate .relate-list button{
+    width: 100%;
+    padding: 16px 0;
+    border-left: 1px solid #d0d0d0;
+    background: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+.sc-relate .relate-list  .btn-related span.txt{
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sc-relate .relate-list .btn-related .txt::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #373737;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(-135deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center center;
+}
+.sc-relate .relate-list .btn-related.on{
+    background: #e2e2e2;
+}
+
+.sc-relate .relate-list .btn-related.on .txt::after {
+    top: 4px;
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+
+.sc-relate .sub-area{
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px 20px;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.sc-relate .sub-area .sub-list{
+    overflow: hidden;
+}
+.sc-relate .sub-area li{
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+}
+.sc-relate .sub-area a{
+    color: #555555;
+    text-decoration: none;
+}
+
+
+
+

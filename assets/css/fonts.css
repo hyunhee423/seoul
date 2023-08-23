@@ -1,0 +1,37 @@
+
+
+/* 
+    개발자모드 키고
+    네트워크 누르고 
+    글꼴누르고 
+    헤더에서 정보보기후에 경로찾아서 넣었음
+    (실제 실무에선 디자이너가 폰트제공)
+*/
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.eot'); /* IE9 Compat Modes */
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.eot'); /* IE9 Compat Modes */
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 700
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.eot'); /* IE9 Compat Modes */
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 800
+}

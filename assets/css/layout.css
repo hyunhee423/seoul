@@ -1,0 +1,383 @@
+@import './fonts.css';
+@import './reset.css';
+@import './common.css';
+
+
+
+.group-top{
+    display: flex;
+    align-items: center;
+}
+.group-top.logo{
+    height: 18.5px;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.group-top .logo a{
+    display: block;
+    width: 105px;
+    height: 27px;
+    background: url(../images/sp1.png) no-repeat -5px -165px;
+}
+
+.gnb{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+.gnb .nav-list{
+    display: flex;
+}
+
+.gnb .nav-list:first-child{
+    margin-left: 40px;
+    position: relative;
+}
+.gnb .nav-item{
+    margin-left: 20px;
+}
+.gnb .nav-item a{
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.gnb .nav-item a:hover{
+    color: #2292e9;
+}
+
+.util-list{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.util-list li{
+    padding: 0 10px;
+    margin-left: auto;
+}
+.util-list a{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;    
+}
+
+.util-list a:hover{
+    color: #2292e9;
+}
+
+
+.group-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 119px;
+}
+
+.group-bottom .slogun-area{
+    background: url(../images/logo2.png) no-repeat 0 0;
+    width: 133px;
+    height: 51px;
+}
+.group-bottom .slogun-area a{
+    display: block;
+    width: 133px;
+    height: 51px;
+}
+
+.search-area{
+    display: flex;
+    align-items: center;
+    height: 119px;
+}
+.search-area form{
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -326px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.search-area form fieldset{
+    height: 36px;
+    overflow: hidden;
+    border: none;
+}
+.search-area form fieldset input{
+
+    font-size: 16px;
+}
+.search-area form fieldset input[type='text']{
+    float: left;
+    width: calc(100% - 62px);
+    border: 0;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+
+}
+.search-area form fieldset input::placeholder { 
+       color: #2292e9;
+       font-size: 14px;
+    
+    }
+.search-area form fieldset .btn-keyboard{
+    width: 29px;
+    height: 19px;
+    margin-left: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 37px;
+}
+
+.search-area form fieldset .btn-keyboard::after{
+    content: '';
+    display: block;
+    width: 29px;
+    height: 19px;
+    background: url(https://www.seoul.go.kr/ksearch/res_newseoul/images/search/keyboard.png) no-repeat;
+}
+.search-area form fieldset .btn-submit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: url(../images/sp1.png) no-repeat -32px -97px;
+}
+
+.lang-area{
+    width: 110px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#langList{
+    float: left;
+    width: 80px;
+    height: 21px;
+    border: 1px solid #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+    box-sizing: border-box;
+    line-height: 21px;
+}
+.lang-area #langBtn{
+    float: left;
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+    border: 0;
+    height: 21px;
+    /* margin-left: -1px; */
+    display: inline-block;
+    padding: 0;
+}
+
+
+
+
+.wearther-area{
+    width: 270px;
+    height: 85px;
+    margin-left: auto;
+    margin-top: 34px;
+    vertical-align: top;
+    text-align: right;
+    display: flex;
+    align-items: start;
+}
+
+.wearther-area .icon{
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.wearther-area .desc-wrap {
+    max-width: 242px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: left;
+}
+.wearther-area .desc-wrap .temp-box{    
+    max-width: 242px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.wearther-area .temp-box {
+    display: block;
+}
+.wearther-area .temp-box .temp{
+    font-size: 25px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.wearther-area .temp-box .desc{
+    font-size: 16px;
+    letter-spacing: -0.1em;
+}
+
+.wearther-area .dust-box{
+    display: block;
+    margin-top: 7px;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.wearther-area .dust-box .state-good{
+    color: #0068b7;
+}
+.wearther-area .dust-box .state-normal{
+    color: #009944;
+}
+
+
+/* footer */
+.footer{}
+.footer .group-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .group-top ul{
+    padding: 15px 0;
+    display: flex;
+}
+.footer .group-top li{
+    position: relative;
+    float: left;
+    padding: 0 10px;
+}
+
+.footer .group-top li:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 14px;
+    margin-top: -6px;
+    background: #dcdcdc;
+}
+.footer .group-top li:first-child::before{
+    display: none;
+}
+.footer .group-top a{
+    font-size: 12px;
+    color: #636363;
+}
+.footer .group-top a.most{
+    color: #000;
+    font-weight: 700;
+}
+
+.footer .group-top .sns_area{
+    display: flex;
+}
+.footer .group-top .sns_area a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/sp3.png) no-repeat;
+    font-size: 0;
+    text-indent: -9999em;
+}
+
+.footer .group-top .sns_area a + a {
+    margin-left: 12px;
+}
+.footer .group-top .sns_area a.facebook{
+    background-position: -25px 0;
+}
+.footer .group-top .sns_area a.facebook:hover{
+    background-position: -25px -25px;
+}
+.footer .group-top .sns_area a.twitter{
+    background-position: -50px 0;
+}
+.footer .group-top .sns_area a.twitter:hover{
+    background-position: -50px -25px;
+}
+.footer .group-top .sns_area a.instagram{
+    background-position: -75px 0;
+}
+.footer .group-top .sns_area a.instagram:hover{
+    background-position: -75px -25px;
+}
+.footer .group-top .sns_area a.ks{
+    background-position: -100px 0;
+}
+.footer .group-top .sns_area a.kakaostory:hover{
+    background-position: -100px -25px;
+}
+.footer .group-top .sns_area a.youtube{
+    background-position: -125px 0;
+}
+.footer .group-top .sns_area a.youtube:hover{
+    background-position: -125px -25px;
+}
+.footer .group-top .sns_area a.blog{
+    background-position: -150px 0;
+}
+.footer .group-top .sns_area a.blog:hover{
+    background-position: -150px -25px;
+}
+
+.footer .group_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    border-top: 1px solid #ccc;
+}
+.footer .group_bottom .qna-area{
+    margin-right: 40px;
+    width: 108px;
+    height: 45px;
+    background: url(../images/sp1.png) no-repeat -180px 0;
+}
+.footer .group_bottom .addr-area{
+    width: 80%;
+    vertical-align: top;
+}
+.footer .group_bottom .addr-area {
+    font-weight: 500;
+    color: #636363;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+
+
+.btn_top{
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin-left: 600px;
+    opacity: 0;
+    transition: 1s;
+    z-index: 1000000;
+}
+.btn_top.on{
+    opacity: 1;
+    bottom: 100px;
+}
